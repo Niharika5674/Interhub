@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Internship Details - Internhub</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo"><i class="fa-solid fa-briefcase"></i> Internhub</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="saved.html">Saved</a>
+    </div>
+    <div class="auth-buttons">
+      <button onclick="location.href='login.html'">Log in</button>
+      <button class="primary" onclick="location.href='signup.html'">Sign up</button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <button class="back-btn" onclick="location.href='index.html'"><i class="fa-solid fa-arrow-left"></i> Back to listings</button>
+
+    <div class="detail-card" id="detailContent">
+  <!-- Filled dynamically by script.js -->
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

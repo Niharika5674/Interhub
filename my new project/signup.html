@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up - Internhub</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo"><i class="fa-solid fa-briefcase"></i> Internhub</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="saved.html">Saved</a>
+    </div>
+    <div class="auth-buttons">
+      <button onclick="location.href='login.html'">Log in</button>
+      <button class="primary" onclick="location.href='signup.html'">Sign up</button>
+    </div>
+  </nav>
+
+  <div class="auth-container">
+    <div class="auth-card">
+      <h2>Create your account</h2>
+      <p class="auth-subtitle">Start saving internships and get alerts.</p>
+
+      <label>Full name</label>
+      <input type="text" id="signupName" placeholder="Your name">
+
+      <label>Email</label>
+      <input type="email" id="signupEmail" placeholder="name@college.edu">
+
+      <label>Password</label>
+      <input type="password" id="signupPassword" placeholder="At least 8 characters">
+
+      <button class="auth-btn" onclick="handleSignup()">Sign up</button>
+
+      <p class="auth-switch">Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

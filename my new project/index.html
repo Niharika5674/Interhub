@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internhub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+    <div class="logo">Internhub</div>
+    <div class="nav-links">
+         <a href="index.html" class="active">Home</a>
+         <a href="saved.html">Saved</a>
+    </div>
+     <div class="auth-buttons">
+        <button onclick="location.href='login.html'">Log in</button>
+        <button class="primary" onclick="location.href='signup.html'">Sign up</button>
+     </div>
+    </nav>
+    <!--search filters-->
+    <div class="container">
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search role or company">
+      <button onclick="searchInternships()"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+    </div>
+    <div class="filters">
+      <select id="locationFilter" onchange="applyFilters()"><option>Location</option><option>Remote</option><option>Delhi NCR</option></select>
+      <select id="roleFilter" onchange="applyFilters()"><option>Role type</option><option>Software</option><option>Design</option></select>
+      <select id="stipendFilter" onchange="applyFilters()"><option>Stipend</option><option>Paid</option><option>Unpaid</option></select>  
+    </div>
+
+    <p id="resultCount">Loading internships...</p>
+    <!-- INTERNSHIP CARDS get inserted here by JavaScript -->
+    <div id="internshipList" class="internship-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+    
+</body>
+</html>

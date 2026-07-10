@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Saved - Internhub</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo"><i class="fa-solid fa-briefcase"></i> Internhub</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="saved.html" class="active">Saved</a>
+    </div>
+    <div class="auth-buttons">
+      <button onclick="location.href='login.html'">Log in</button>
+      <button class="primary" onclick="location.href='signup.html'">Sign up</button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h2 style="margin-bottom:4px;">Saved internships</h2>
+    <p id="savedCount" style="font-size:13px; color:#64748b; margin-bottom:20px;">Loading...</p>
+    <div id="savedList" class="internship-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
